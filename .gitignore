@@ -1,22 +1,22 @@
 # --- Dependencies ---
-node_modules/          # Ignore Node.js dependencies
-venv/                  # Ignore Python virtual environments
-.env                   # Ignore environment variables (sensitive data)
+node_modules/          
+venv/                  
+.env                  
 
 # --- Build Outputs ---
-dist/                  # Ignore production builds
-build/                 # Ignore build artifacts
-*.exe                  # Ignore all executable files
+dist/                 
+build/                 
+*.exe                 
 
 # --- Logs ---
-*.log                  # Ignore all log files
-npm-debug.log*         # Ignore specific npm debug logs
+*.log                  
+npm-debug.log*         
 
 # --- OS Specific Files ---
-.DS_Store              # Ignore macOS system files
-Thumbs.db              # Ignore Windows thumbnail caches
+.DS_Store              
+Thumbs.db             
 
 # --- IDE Settings ---
-.vscode/               # Ignore Visual Studio Code settings
-.idea/                 # Ignore IntelliJ IDEA settings
-*.swp                  # Ignore Vim swap files
+.vscode/               
+.idea/                 
+*.swp                  
