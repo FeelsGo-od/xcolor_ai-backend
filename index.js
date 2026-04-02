@@ -1,11 +1,11 @@
 // telegram-server.js
-const express = require('express');
-const cors = require('cors');
-const fetch = require('node-fetch');
+import express, { json } from 'express';
+import cors from 'cors';
+import fetch from 'node-fetch';
 
 const app = express();
 app.use(cors());
-app.use(express.json());
+app.use(json());
 
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
@@ -52,4 +52,4 @@ app.post('/telegram-webhook', async (req, res) => {
   }
 });
 
-module.exports = app;
+export default app;
