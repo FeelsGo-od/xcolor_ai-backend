@@ -1,7 +1,8 @@
 // telegram-server.js
 import express, { json } from 'express';
 import cors from 'cors';
-import fetch from 'node-fetch';
+
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
 const app = express();
 app.use(cors());
